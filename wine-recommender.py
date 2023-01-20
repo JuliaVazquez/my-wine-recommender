@@ -9,7 +9,7 @@ from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import CountVectorizer
  
 
-st.set_page_config(layout="wide",page_title='Wine Recommender', page_icon="wine3.png")
+st.set_page_config(layout="wide",page_title='Wine Recommender', page_icon="iages/wine3.png")
 
 header = st.container()
 dataset = st.container()
@@ -22,8 +22,8 @@ with header:
 with dataset:
     st.markdown("<h2 style='text-align: center;'>Data set in progress...for now this is the info that we have!</h2>", unsafe_allow_html=True)
 
-    clustered = pd.read_csv('new_clustered.csv')
-    varietal = pd.read_csv('new_varietal.csv')
+    clustered = pd.read_csv('data/new_clustered.csv')
+    varietal = pd.read_csv('data/new_varietal.csv')
     # st.write(clustered.head())
 
     col1, col2 = st.columns([1,5])
